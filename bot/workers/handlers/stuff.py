@@ -117,34 +117,32 @@ async def start(event, args, client):
     await event.reply(
         msg,
         buttons=[
-            [Button.inline("Help", data="ihelp")],
+            [Button.inline("❗𝖧𝖾𝗅𝗉", data="ihelp")],
             [
                 Button.url(
-                    "Source-Code (Original)",
-                    url="github.com/1Danish-00/compressorqueue",
+                    "⛅ 𝖴𝗉𝖽𝖺𝗍𝖾𝗌",
+                    url="t.me/Rokubotz",
                 ),
-                Button.url("Developer (Original)", url="t.me/danish_00"),
+                Button.url("🌨️ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url="t.me/Team_Roku"),
             ],
-            [Button.url("Fork Maintainer", url="t.me/Col_serra")],
+            [Button.url("🧑‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="t.me/Snowball_Official")],
         ],
+
     )
-
-
 async def help(event, args, client):
     return await start(event, args, client)
 
 
 async def ihelp(event):
     await event.edit(
-        "**⛩️ An Encode bot**\n\n+"
+        "**A Video Encoder Bot**\n\n+"
         "This bot encodes videos With your custom ffmpeg or handbrake-cli settings."
         "\n+Easy to Use (Depends)\n"
-        "-Due to your custom Settings & hosting server bot may or may not take a long time to encode"
         ".\n\nJust Forward a Video…/videos"
         "\n\nFor available commands click the Commands button below.",
         buttons=[
-            [Button.inline("Commands", data="icommands")],
-            [Button.inline("🔙 Back", data="beck")],
+            [Button.inline("𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌", data="icommands")],
+            [Button.inline("« Bᴀᴄᴋ", data="beck")],
         ],
     )
 
@@ -168,15 +166,15 @@ async def beck(event):
     await event.edit(
         msg,
         buttons=[
-            [Button.inline("Help", data="ihelp")],
+            [Button.inline("❗𝖧𝖾𝗅𝗉", data="ihelp")],
             [
                 Button.url(
-                    "Source-Code (Original)",
-                    url="github.com/1Danish-00/compressorqueue",
+                    "⛅ 𝖴𝗉𝖽𝖺𝗍𝖾𝗌",
+                    url="t.me/Rokubotz",
                 ),
-                Button.url("Developer (Original)", url="t.me/danish_00"),
+                Button.url("🌨️ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url="t.me/Team_Roku"),
             ],
-            [Button.url("Fork Maintainer", url="t.me/Col_serra")],
+            [Button.url("🧑‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="t.me/Snowball_Official")],
         ],
     )
 
@@ -277,7 +275,7 @@ async def icommands(event):
 start{s} - check if bot is awake and get usage.
 restart{s} -  restart bot
 update{s} - update bot
-nuke{s} - ☢️ nuke bot
+nuke{s} - nuke bot
 bash{s} - /bash + command
 eval{s} - evaluate code
 pause{s} - prevent bot from encoding
@@ -313,14 +311,14 @@ name{s} - quick filter with anime_title
 vname{s} - get list of name filter
 delname{s} - delete name filter
 rss{s} - edit, delete & subscribe rss feeds
-status{s} - 🆕 get bot's status
-showthumb{s} - 🖼️ show current thumbnail
+status{s} - get bot's status
+showthumb{s} - show current thumbnail
 parse{s} - toggle parsing with captions or anilist
 groupenc{s} - turn off/on encoding in groups
-cancelall{s} - ❌ clear cached downloads & queued files
+cancelall{s} - clear cached downloads & queued files
 clear{s} - clear queued files
 logs{s} - get bot logs
-help{s} - same as start`
+/help{s} - same as start
 
 All above commands accept '-h' / '--help' arguments to get more detailed help about each command.
         """,

@@ -57,8 +57,8 @@ class Encoder:
                     f"**User:**\n└[{self.sender.first_name}](tg://user?id={user})\n\n**Currently Encoding:**\n└`{out}`\n\n**Source File:**\n└`{sau}`",
                     buttons=[
                         [Button.inline("ℹ️", data=f"pres{wah}")],
-                        [Button.inline("CHECK PROGRESS", data=f"stats2")],
-                        [Button.inline("CANCEL PROCESS", data=f"skip{wah}")],
+                        [Button.inline("𝖢𝗁𝖾𝖼𝗄 𝖯𝗋𝗈𝗀𝗋𝖾𝗌𝗌", data=f"stats2")],
+                        [Button.inline("𝖢𝖺𝗇𝖼𝖾𝗅 𝖯𝗋𝗈𝗀𝗋𝖾𝗌𝗌", data=f"skip{wah}")],
                     ],
                 )
 

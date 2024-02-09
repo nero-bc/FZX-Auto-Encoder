@@ -47,7 +47,7 @@ class Config:
             self.FCHANNEL = config("FCHANNEL", default=0, cast=int)
             self.FCHANNEL_STAT = config("FCHANNEL_STAT", default=0, cast=int)
             self.FCODEC = config("FCODEC", default=None)
-            self.FFMPEG = config("FFMPEG", default=ffmpeg -i "{}" -preset superfast -c:v libx265 -s 1920x1080 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 5 -metadata title='FZXAnime [t.me/FZXAnime]' -metadata author='𝖥𝖹𝖷𝖠𝗇𝗂𝗆𝖾 [รíӀҽղԵ ժҽʍօղ]' -metadata:s:a title='𝖥𝖹𝖷 𝖠𝗇𝗂𝗆𝖾 [รíӀҽղԵ ժҽʍօղ]' -metadata:s:v title='ENCODED_BY [รíӀҽղԵ ժҽʍօղ]' "{}")
+            self.FFMPEG = config("FFMPEG", default=None)
             self.FL_CAP = config("FILENAME_AS_CAPTION", default=False, cast=bool)
             self.FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)
             self.FSTICKER = config("FSTICKER", default=None)

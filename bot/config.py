@@ -39,7 +39,7 @@ class Config:
             self.DEV = config("DEV", default=0, cast=int)
             self.DL_STUFF = config("DL_STUFF", default=None)
             self.DUMP_CHANNEL = config("DUMP_CHANNEL", default=0, cast=int)
-            self.DUMP_LEECH = config("DUMP_LEECH", default=True, cast=bool)
+            self.DUMP_LEECH = config("DUMP_LEECH", default=False, cast=bool)
             self.DYNO = config("DYNO", default=None)
             self.ENCODER = config("ENCODER", default=None)
             self.EXT_CAP = config("EXTENDED_CAPTIONS", default=True, cast=bool)
@@ -49,7 +49,7 @@ class Config:
             self.FCODEC = config("FCODEC", default=None)
             self.FFMPEG = config(
                 "FFMPEG",
-                default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
+                default='ffmpeg -i "{}" -preset superfast -c:v libx265 -s 640x360 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 5 -metadata title='FZXAnime [t.me/FZXAnime]' -metadata author='𝖥𝖹𝖷𝖠𝗇𝗂𝗆𝖾 [รíӀҽղԵ ժҽʍօղ]' -metadata:s:a title='𝖥𝖹𝖷 𝖠𝗇𝗂𝗆𝖾 [รíӀҽղԵ ժҽʍօղ]' -metadata:s:v title='ENCODED_BY [รíӀҽղԵ ժҽʍօղ]' "{}"',
             )
             self.FL_CAP = config("FILENAME_AS_CAPTION", default=False, cast=bool)
             self.FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)

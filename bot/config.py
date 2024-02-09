@@ -47,10 +47,7 @@ class Config:
             self.FCHANNEL = config("FCHANNEL", default=0, cast=int)
             self.FCHANNEL_STAT = config("FCHANNEL_STAT", default=0, cast=int)
             self.FCODEC = config("FCODEC", default=None)
-            self.FFMPEG = config(
-                "FFMPEG",
-                default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
-            )
+            self.FFMPEG = config("FFMPEG", default=None)
             self.FL_CAP = config("FILENAME_AS_CAPTION", default=False, cast=bool)
             self.FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)
             self.FSTICKER = config("FSTICKER", default=None)

@@ -21,7 +21,7 @@ class Config:
     def __init__(self):
         try:
             self.ALWAYS_DEPLOY_LATEST = config(
-                "ALWAYS_DEPLOY_LATEST", default=False, cast=bool
+                "ALWAYS_DEPLOY_LATEST", default=True, cast=bool
             )
             self.ALLOW_ACTION = config("ALLOW_ACTION", default=True, cast=bool)
             self.APP_ID = config("APP_ID", default=6, cast=int)
